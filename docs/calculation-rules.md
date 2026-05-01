@@ -16,7 +16,7 @@ The following grades count toward GWA:
 
 ## Excluded Grades
 The following grades do not count toward GWA:
-- 5.0, 6.0, 7.0, 8.0, 9.0, 0.0
+- 6.0, 7.0, 8.0, 9.0, 0.0
 
 ## Special Cases
 ### Incomplete
