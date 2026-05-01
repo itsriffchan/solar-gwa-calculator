@@ -1,6 +1,6 @@
 # Solar GWA Calculator
 
-Browser extension project for calculating GWA from a student portal.
+Browser extension project for calculating GWA from the SOLAR Grades portal
 
 ## Status
 
