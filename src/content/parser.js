@@ -39,7 +39,7 @@ function parsePortalTable(rows){
     return rows.map(parsePortalRow).filter(row => row !== null);
 }  
 
-if (typeof module !== 'underfined' && module.exports) {
+if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
             parsePortalRow,
             parsePortalTable,

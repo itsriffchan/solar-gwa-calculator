@@ -4,9 +4,17 @@
     "version": "1.0",
     "description": "Automatically calculate GWA",
     "permissions": ["activeTab", "scripting"],
+    "icon": {
+        "48": "assets/icons/icon48.png",
+        "128": "assets/icons/icon128.png"
+    },
     "action": {
         "default_popup": "src/popup/popup.html",
-        "default_title": "Calculate GWA"
+        "default_title": "Calculate GWA",
+        "default_icon": {
+            "48": "assets/icons/icon48.png",
+            "128": "assets/icons/icon128.png"
+        }
     },
-    "host_permissions": ["<all_urls>"]
+    "host_permissions": ["https://solar.feutech.edu.ph/*"]
 }
