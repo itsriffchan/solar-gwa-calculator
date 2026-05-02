@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Solar GWA Calculator",
+    "version": "1.0",
+    "description": "Automatically calculate GWA",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_title": "Calculate GWA"
+    },
+    "host_permissions": ["<all_urls>"]
+}
