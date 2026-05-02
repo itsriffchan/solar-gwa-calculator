@@ -14,4 +14,6 @@ function calculateGWA(courses){
     return sumProducts / sumUnits;
 }
 
-module.exports = calculateGWA;
+if (typeof module !== 'underfined' && module.exports) {
+    module.exports = calculateGWA;
+}
