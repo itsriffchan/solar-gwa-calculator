@@ -50,12 +50,24 @@ function extractPortalRowsFromPage(){
     });
 }
 
-function showResults(gwa) {
+function getRankClass(gwa) {
+    if (gwa >= 3.80) return 'gwa-gold';
+    if (gwa >= 3.60) return 'gwa-silver';
+    if (gwa >= 3.40) return 'gwa-bronze';
+    return 'gwa-neutral';
+}
+function showResult(gwa) {
+    const rankClass = getRankClass(gwa);
     resultEl.innerHTML = `
-        <div class="gwa-value">${gwa.toFixed(3)}</div>
+        <div class="gwa-value ${rankClass}" role="status" aria-live="polite">${gwa.toFixed(2)}</div>
         <div class="gwa-label">Calculated GWA</div>
         `;
     resultEl.classList.add('show');
+}
+
+function showError(message) { 
+    errorEl.textContent = message;
+    errorEl.classList.add('show');
 }
 
 function clearMessages() {

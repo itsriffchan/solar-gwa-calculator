@@ -39,9 +39,11 @@ function parsePortalTable(rows){
     return rows.map(parsePortalRow).filter(row => row !== null);
 }  
 
-module.exports = {
-        parsePortalRow,
-        parsePortalTable,
-        isBlank,
-        toNumber,
-};
+if (typeof module !== 'underfined' && module.exports) {
+    module.exports = {
+            parsePortalRow,
+            parsePortalTable,
+            isBlank,
+            toNumber,
+    };
+}
