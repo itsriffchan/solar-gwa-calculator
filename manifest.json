@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "Automatically calculate GWA",
     "permissions": ["activeTab", "scripting"],
-    "icon": {
+    "icons": {
         "48": "assets/icons/icon48.png",
         "128": "assets/icons/icon128.png"
     },
