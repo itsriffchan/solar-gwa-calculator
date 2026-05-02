@@ -15,23 +15,23 @@ Local browser extension for calculating GWA from the SOLAR Grades portal
 
 1. Download the release ZIP from the GitHub Releases page.
 2. Extract the ZIP to a folder on your computer.
-3. Open `about:debugging`.
-4. Navigate to `This Firefox`.
-5. Click `Load Temporary Add-on`.
-6. Select the `manifest.json` from the extracted folder.
+3. Open `about:debugging#/runtime/this-firefox`.
+4. Click `Load Temporary Add-on`.
+5. Select the `manifest.json` from the extracted folder.
+> _Note: Firefox loads extensions temporarily; they are removed when the browser restarts._
+
+## Usage
+- Open the SOLAR Grades portal
+- Click the extension icon
+- GWA is calculated automatically from the table data
 
 ### Updating
-
-When a new release is published, remove the old unpacked folder or overwrite it with the new release contents, then reload the extension in the browser.
-
-## Release Notes
-
-See [RELEASE_NOTES_TEMPLATE.md](RELEASE_NOTES_TEMPLATE.md) for a copy-paste template for GitHub Releases.
-
-## Status
-
-This repository is in early setup. The calculation rules live in [docs/calculation-rules.md](docs/calculation-rules.md).
-
+1. Download the new release ZIP.
+2. Replace or overwrite the existing folder.
+3. Reload the extension:
+   - Chrome/Edge → Extensions page → Reload
+   - Firefox → re-load via `about:debugging`
+     
 ## Project layout
 
 - `src/core/` - calculation logic and validation
@@ -42,4 +42,6 @@ This repository is in early setup. The calculation rules live in [docs/calculati
 - `docs/` - calculation rules and portal notes
 - `tests/` - calculator and parser tests
 
-*This project is open-source and can be modified freely*
+## License / Usage
+
+*This project is open-source and can be modified freely.*
