@@ -1,11 +1,8 @@
 # Solar GWA Calculator
 
-Browser extension project for calculating GWA from the SOLAR Grades portal
+Local browser extension for calculating GWA from the SOLAR Grades portal
 
 ## Download And Install
-
-The recommended distribution is a GitHub Release asset, not a browser store listing.
-
 ### Chrome / Edge
 
 1. Download the release ZIP from the GitHub Releases page.
@@ -16,7 +13,12 @@ The recommended distribution is a GitHub Release asset, not a browser store list
 
 ### Firefox
 
-Firefox support may require a separate signed build depending on how you distribute the extension. For local testing, use about:debugging and load the extracted folder as a temporary add-on if the manifest is compatible.
+1. Download the release ZIP from the GitHub Releases page.
+2. Extract the ZIP to a folder on your computer.
+3. Open `about:debugging`.
+4. Navigate to `This Firefox`.
+5. Click `Load Temporary Add-on`.
+6. Select the `manifest.json` from the extracted folder.
 
 ### Updating
 
@@ -40,6 +42,4 @@ This repository is in early setup. The calculation rules live in [docs/calculati
 - `docs/` - calculation rules and portal notes
 - `tests/` - calculator and parser tests
 
-## Open-source plan
-
-This project is intended to be public and easy to contribute to. Keep the calculation rules documented, keep the math separate from the browser code, and add tests before shipping features.
+*This project is open-source and can be modified freely*
